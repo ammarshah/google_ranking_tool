@@ -1,11 +1,11 @@
-.col-lg-4
-    = form_tag '/', remote: true
-        h4 Add a file to upload and execute
+.col-lg-3
+    = form_tag '/', remote: true, multipart: true
+        h4 Add a file to start ranking
         .form-group
             = file_field_tag 'file', class: 'form-control', required: true
         = submit_tag 'Upload', class: 'btn btn-primary'
 
 .col-lg-12
-    .result.text-center
-        / p Download updated file with rankings
-        / button name='download' class='btn btn-success' Download
+    #result.text-center.hide
+        p Download your file with rankings
+        = link_to 'Download', 'Google Keywords Ranking.xlsx', class: 'btn btn-success'
