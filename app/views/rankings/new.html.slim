@@ -7,7 +7,7 @@
 
 .col-lg-12
     #loader.text-center.hide
-        = image_tag "loader"
+        = image_tag(asset_path('loader.gif'))
     #result.text-center.hide
         p Download your file with rankings
         = link_to 'Download', 'Google Keywords Ranking.xlsx', class: 'btn btn-success'
