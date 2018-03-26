@@ -42,7 +42,7 @@ class RankingsController < ApplicationController
                 rescue Exception => e
                     puts "Row Index: " + row_index.to_s
                     puts e.message
-                    break
+                    # break
                 end
             end
 
