@@ -36,7 +36,7 @@ gem 'jquery-rails'
 gem "slim-rails"
 gem "twitter-bootstrap-rails"
 gem 'rubyXL'
-gem 'nokogiri'
+gem 'google_search_results'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
